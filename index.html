@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prank Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex items-center justify-center"
+  >
+    <div
+      class="neumorphic-card w-4/5 h-4/5 p-10 relative rounded-2xl flex flex-col justify-center items-center"
+    >
+      <h1 id="card-title" class="text-4xl font-bold mb-10 text-center">
+        Are you ready for the challenge?
+      </h1>
+      <div id="button-container" class="flex space-x-5">
+        <button
+          id="yes-button"
+          class="glass-button px-8 py-4 font-semibold text-lg"
+        >
+          YES
+        </button>
+        <button
+          id="no-button"
+          class="glass-button px-8 py-4 font-semibold text-lg"
+        >
+          NO
+        </button>
+      </div>
+      <img
+        id="card-image"
+        src=""
+        alt="Surprise Image"
+        class="hidden absolute inset-0 w-full h-full object-cover rounded-2xl"
+      />
+      <audio
+        id="prank-sound"
+        src="audio/amanMoan.mp3"
+        preload="auto"
+        loop
+      ></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
